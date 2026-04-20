@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 
 import Overview from "@modules/account/components/overview"
@@ -20,3 +21,6 @@ export default async function OverviewTemplate() {
 
   return <Overview customer={customer} orders={orders} />
 }
+
+
+export const dynamicParams = true;

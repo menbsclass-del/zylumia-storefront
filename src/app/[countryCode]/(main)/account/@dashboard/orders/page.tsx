@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 
 import OrderOverview from "@modules/account/components/order-overview"
@@ -35,3 +36,6 @@ export default async function Orders() {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { retrieveOrder } from "@lib/data/orders"
 import OrderCompletedTemplate from "@modules/order/templates/order-completed-template"
 import { Metadata } from "next"
@@ -21,3 +22,6 @@ export default async function OrderConfirmedPage(props: Props) {
 
   return <OrderCompletedTemplate order={order} />
 }
+
+
+export const dynamicParams = true;

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { retrieveCustomer } from "@lib/data/customer"
 import { Toaster } from "@medusajs/ui"
 import AccountLayout from "@modules/account/templates/account-layout"
@@ -18,3 +19,6 @@ export default async function AccountPageLayout({
     </AccountLayout>
   )
 }
+
+
+export const dynamicParams = true;

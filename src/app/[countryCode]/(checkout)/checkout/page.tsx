@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { retrieveCart } from "@lib/data/cart"
 import { retrieveCustomer } from "@lib/data/customer"
 import PaymentWrapper from "@modules/checkout/components/payment-wrapper"
@@ -28,3 +29,6 @@ export default async function Checkout() {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
@@ -31,3 +32,6 @@ export default async function StorePage(props: Params) {
     />
   )
 }
+
+
+export const dynamicParams = true;

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -88,3 +89,6 @@ export default async function CollectionPage(props: Props) {
     />
   )
 }
+
+
+export const dynamicParams = true;

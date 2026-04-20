@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { retrieveOrder } from "@lib/data/orders"
 import OrderDetailsTemplate from "@modules/order/templates/order-details-template"
 import { Metadata } from "next"
@@ -31,3 +32,6 @@ export default async function OrderDetailPage(props: Props) {
 
   return <OrderDetailsTemplate order={order} />
 }
+
+
+export const dynamicParams = true;

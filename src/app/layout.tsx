@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { getBaseURL } from "@lib/util/env"
 import { Metadata } from "next"
 import "styles/globals.css"
@@ -15,3 +16,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     </html>
   )
 }
+
+
+export const dynamicParams = true;

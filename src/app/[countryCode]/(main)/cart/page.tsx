@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { retrieveCart } from "@lib/data/cart"
 import { retrieveCustomer } from "@lib/data/customer"
 import CartTemplate from "@modules/cart/templates"
@@ -19,3 +20,6 @@ export default async function Cart() {
 
   return <CartTemplate cart={cart} customer={customer} />
 }
+
+
+export const dynamicParams = true;

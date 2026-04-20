@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Heading, Text } from "@medusajs/ui"
 import TransferActions from "@modules/order/components/transfer-actions"
 import TransferImage from "@modules/order/components/transfer-image"
@@ -36,3 +37,6 @@ export default async function TransferPage({
     </div>
   )
 }
+
+
+export const dynamicParams = true;

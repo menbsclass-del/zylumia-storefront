@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import InteractiveLink from "@modules/common/components/interactive-link"
 import { Metadata } from "next"
 
@@ -17,3 +18,6 @@ export default async function NotFound() {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

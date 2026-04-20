@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import Spinner from "@modules/common/icons/spinner"
 
 export default function Loading() {
@@ -7,3 +8,6 @@ export default function Loading() {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

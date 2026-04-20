@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 
 import ProfilePhone from "@modules/account//components/profile-phone"
@@ -52,3 +53,6 @@ const Divider = () => {
   return <div className="w-full h-px bg-gray-200" />
 }
 ;``
+
+
+export const dynamicParams = true;

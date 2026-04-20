@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -36,3 +37,6 @@ export default async function Addresses(props: {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

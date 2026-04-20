@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 
 import { listCartOptions, retrieveCart } from "@lib/data/cart"
@@ -43,3 +44,6 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
     </>
   )
 }
+
+
+export const dynamicParams = true;

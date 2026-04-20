@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { ArrowUpRightMini } from "@medusajs/icons"
 import { Text } from "@medusajs/ui"
 import { Metadata } from "next"
@@ -28,3 +29,6 @@ export default function NotFound() {
     </div>
   )
 }
+
+
+export const dynamicParams = true;

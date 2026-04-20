@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { listProducts } from "@lib/data/products"
@@ -129,3 +130,6 @@ export default async function ProductPage(props: Props) {
     />
   )
 }
+
+
+export const dynamicParams = true;
