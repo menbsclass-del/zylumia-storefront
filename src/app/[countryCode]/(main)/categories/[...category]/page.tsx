@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+﻿export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -16,12 +16,7 @@ type Props = {
   }>
 }
 
-export async function generateStaticParams() {
-  const product_categories = await listCategories()
 
-  if (!product_categories) {
-    return []
-  }
 
   const countryCodes = await listRegions().then((regions: StoreRegion[]) =>
     regions?.map((r) => r.countries?.map((c) => c.iso_2)).flat()
@@ -84,6 +79,3 @@ export default async function CategoryPage(props: Props) {
     />
   )
 }
-
-
-export const dynamicParams = true;

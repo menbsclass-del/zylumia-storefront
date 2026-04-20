@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+﻿export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -18,8 +18,7 @@ type Props = {
 
 export const PRODUCT_LIMIT = 12
 
-export async function generateStaticParams() {
-  const { collections } = await listCollections({
+ = await listCollections({
     fields: "*products",
   })
 
@@ -89,6 +88,3 @@ export default async function CollectionPage(props: Props) {
     />
   )
 }
-
-
-export const dynamicParams = true;

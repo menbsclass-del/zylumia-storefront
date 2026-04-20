@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+﻿export const dynamic = 'force-dynamic';
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { listProducts } from "@lib/data/products"
@@ -11,15 +11,7 @@ type Props = {
   searchParams: Promise<{ v_id?: string }>
 }
 
-export async function generateStaticParams() {
-  try {
-    const countryCodes = await listRegions().then((regions) =>
-      regions?.map((r) => r.countries?.map((c) => c.iso_2)).flat()
-    )
 
-    if (!countryCodes) {
-      return []
-    }
 
     const promises = countryCodes.map(async (country) => {
       const { response } = await listProducts({
@@ -130,6 +122,3 @@ export default async function ProductPage(props: Props) {
     />
   )
 }
-
-
-export const dynamicParams = true;
